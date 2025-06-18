@@ -1,23 +1,19 @@
 {
-    "manifest_version": 3,
-    "name": "Reapeated sites",
-    "version": "1.0",
-    "description": "An extension to check if you have already visited the site",
+  "manifest_version": 3,
+  "name": "Reapeated sites",
+  "version": "1.0",
+  "description": "An extension to check if you have already visited the site",
 
-    "background": {
-        "service_worker": "background.js"
-    },
+  "background": {
+    "service_worker": "background.js"
+  },
 
-    "action": {
-        "default_popup": "popup.html",
-        "default_icon": {
-            "32": "icon.png"
-        }
-    },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "32": "icon.png"
+    }
+  },
 
-    "permissions": [
-        "history",
-        "tabs"
-    ]
-
+  "permissions": ["storage", "tabs", "action"]
 }
